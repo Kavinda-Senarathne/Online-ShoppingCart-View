@@ -1,0 +1,42 @@
+[{
+  "id": 1,
+  "name": "Dell Inspiron 3593 ",
+  "code": "15.6 Inch FHD ( 10th Gen Core i3 ) 4GB DDR4 1TB HDD",
+  "quantityInStock": 1,
+  "unitPrice": 120000.0000
+},
+{
+  "id": 2,
+  "name": "Acer Aspire A315",
+  "code": "Intel Core I3 10th Gen | 4GB DDR4 Ram 15.6'' FHD|1TB HDD | Windows 10 Home",
+  "quantityInStock": 5,
+  "unitPrice": 130000.0000
+},
+{
+  "id": 3,
+  "name": "Asus P2540FA-DM0029",
+  "code": "Intel core i3 10th Gen 4gb DDR4 ram 15.6'' FHD1TB HDD 3 years Warranty",
+  "quantityInStock": 2,
+  "unitPrice": 140000.0000
+},
+{
+  "id": 4,
+  "name": "HP Pavilion CS3049TX",
+  "code": "15.6 Inches FHD Display ( 10TH Gen Core i7 ) 8GB DDR4 512GB SSD",
+  "quantityInStock": 1,
+  "unitPrice": 150000.0000
+},
+{
+  "id": 5,
+  "name": "Asus Vivobook 15 X512FJ",
+  "code": "BQ522T 15.6 Inches FHD Display ( 10th Gen Core i5 ) 8GB DDR4 1TB HDD",
+  "quantityInStock": 6,
+  "unitPrice": 180000.0000
+},
+{
+  "id": 5,
+  "name": "Lenovo Ideapad 330s",
+  "code": "15IKB ( 8th Gen Core - i5 ) 2GB VGA - 15.6 - Midnight Blue",
+  "quantityInStock": 8,
+  "unitPrice": 190000.0000
+}]

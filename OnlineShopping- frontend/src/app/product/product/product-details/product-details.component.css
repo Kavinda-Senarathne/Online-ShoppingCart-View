@@ -1,0 +1,35 @@
+
+.card-img-wrapper{
+  overflow: hidden;
+  position: relative;
+}
+button[type=button].btn{
+  border-radius: 20px;
+  background-color: rgb(61, 149, 175);
+  color: #fff;
+}
+.quantity{
+  display:flex;
+  width:70px;
+}
+
+
+.quantity input[type=number]::-webkit-inner-spin-button,
+.quantity input[type=number]::-webkit-outer-spin-button{
+  -webkit-appearance:none;
+}
+
+.quantity input,.quantity button{
+  width:50px;
+  padding:.5em;
+  font-size:1.2rem;
+  text-align:center;
+  font-weight:900;
+  background:white;
+  border:1px solid #aaa;
+}
+
+.quantity input{
+  border-left:none;
+  border-right:none;
+}

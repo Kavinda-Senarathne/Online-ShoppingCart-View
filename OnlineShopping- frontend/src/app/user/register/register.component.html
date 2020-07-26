@@ -1,0 +1,55 @@
+<form [formGroup]="service.formModel" autocomplete="off" (submit)="onSubmit()">
+
+  <div class="form-group required">
+    <label>Full Name</label>
+    <input class="form-control" formControlName="FullName">
+    <label class="text-danger" *ngIf="service.formModel.get('FullName').touched && service.formModel.get('FullName').errors?.required">This field is required</label>
+  </div>
+  <div class="form-group required">
+    <label>Email</label>
+    <input class="form-control" formControlName="Email">
+    <label class="text-danger" *ngIf="service.formModel.get('Email').touched && service.formModel.get('Email').errors?.email">Please provide valid email address</label>
+  </div>
+  <div class="form-group required">
+    <label>Address Line 1</label>
+    <input class="form-control" formControlName="Address_Line1">
+    <label class="text-danger" *ngIf="service.formModel.get('Address_Line1').touched && service.formModel.get('Address_Line1').errors?.required">This field is required</label>
+  </div>
+  <div class="form-group required">
+    <label>Address Line 2</label>
+    <input class="form-control" formControlName="Address_Line2">
+    <label class="text-danger" *ngIf="service.formModel.get('Address_Line2').touched && service.formModel.get('Address_Line2').errors?.required">This field is required</label>
+  </div>
+  <div class="form-group required">
+    <label>State</label>
+    <input class="form-control" formControlName="State">
+    <label class="text-danger" *ngIf="service.formModel.get('State').touched && service.formModel.get('State').errors?.required">This field is required</label>
+  </div>
+  <div class="form-group required">
+    <label>Postal Code</label>
+    <input class="form-control" formControlName="PostalCode">
+    <label class="text-danger" *ngIf="service.formModel.get('PostalCode').touched && service.formModel.get('PostalCode').errors?.required">This field is required</label>
+  </div>
+  <div formGroupName="Passwords">
+  <div class="form-group required">
+    <label>Password</label>
+    <input type="password" class="form-control" formControlName="Password">
+    <label class="text-danger" *ngIf="service.formModel.get('Passwords.Password').touched && service.formModel.get('Passwords.Password').errors?.required">This field is required</label>
+    <label class="text-danger" *ngIf="service.formModel.get('Passwords.Password').touched && service.formModel.get('Passwords.Password').errors?.minlength"> Mininum 4 character required</label>
+  </div>
+  <div class="form-group required">
+    <label>Confirm Password</label>
+    <input type="password" class="form-control" formControlName="ConfirmPassword">
+    <label class="text-danger" *ngIf="service.formModel.get('Passwords.ConfirmPassword').touched && service.formModel.get('Passwords.ConfirmPassword').errors?.required">This field is required</label>
+    <label class="text-danger" *ngIf="service.formModel.get('Passwords.ConfirmPassword').touched && service.formModel.get('Passwords.ConfirmPassword').errors?.passwordMismatch">Confirm password does not match</label>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-8 offset-md-2">
+    <button type="submit" class="btn btn-lg btn-block" [disabled]="!service.formModel.valid">Register</button>
+  </div>
+</div>
+
+</form>
+
+
